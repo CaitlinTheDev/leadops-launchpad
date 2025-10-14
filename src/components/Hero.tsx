@@ -76,23 +76,20 @@ const Hero = () => {
           {/* Right: Visual cards (inspired by reference images) */}
           <div className="hidden lg:grid grid-cols-2 gap-4 animate-fade-in">
             <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300">
-              <div className="text-brand-accent text-3xl mb-2">🎯</div>
-              <h3 className="text-white font-semibold mb-2">Experience & Expertise</h3>
-              <p className="text-gray-400 text-sm">Years of strategic excellence</p>
-            </div>
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300 mt-8">
-              <div className="text-brand-accent text-3xl mb-2">💡</div>
-              <h3 className="text-white font-semibold mb-2">Individual approach</h3>
-              <p className="text-gray-400 text-sm">Tailored solutions for your business</p>
+              <h3 className="text-white font-semibold mb-2">Proven Expertise</h3>
+              <p className="text-gray-400 text-sm">Decade of strategic consulting across multiple industries</p>
             </div>
             <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300">
-              <div className="text-brand-accent text-3xl mb-2">🚀</div>
-              <h3 className="text-white font-semibold mb-2">Innovation & Technology</h3>
-              <p className="text-gray-400 text-sm">Cutting-edge methodologies</p>
+              <h3 className="text-white font-semibold mb-2">Tailored Solutions</h3>
+              <p className="text-gray-400 text-sm">Custom methodologies designed for your specific challenges</p>
             </div>
-            <div className="bg-brand-accent/20 backdrop-blur-sm border border-brand-accent/30 rounded-2xl p-6 hover:bg-brand-accent/30 transition-all duration-300 mt-8">
+            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300">
+              <h3 className="text-white font-semibold mb-2">Data-Driven Approach</h3>
+              <p className="text-gray-400 text-sm">Evidence-based strategies that deliver measurable outcomes</p>
+            </div>
+            <div className="bg-brand-accent/20 backdrop-blur-sm border border-brand-accent/30 rounded-2xl p-6 hover:bg-brand-accent/30 transition-all duration-300">
               <div className="text-4xl font-bold text-white mb-1">30%</div>
-              <p className="text-white text-sm">Increase in overall profit</p>
+              <p className="text-white text-sm">Average profit increase</p>
             </div>
           </div>
         </div>
