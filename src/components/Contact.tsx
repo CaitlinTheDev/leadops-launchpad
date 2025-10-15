@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -13,6 +13,22 @@ const Contact = () => {
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  useEffect(() => {
+    // Load Calendly script
+    const script = document.createElement("script");
+    script.src = "https://assets.calendly.com/assets/external/widget.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      // Cleanup script on unmount
+      const existingScript = document.querySelector('script[src="https://assets.calendly.com/assets/external/widget.js"]');
+      if (existingScript) {
+        document.body.removeChild(existingScript);
+      }
+    };
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -146,6 +162,23 @@ const Contact = () => {
               </p>
             </form>
           </div>
+        </div>
+
+        {/* Calendly Embed Section */}
+        <div className="mt-16 animate-fade-in">
+          <div className="text-center mb-8">
+            <h3 className="text-2xl font-bold text-brand-primary mb-2">
+              Schedule Your Strategy Call
+            </h3>
+            <p className="text-text-muted">
+              Pick a time that works best for you
+            </p>
+          </div>
+          <div 
+            className="calendly-inline-widget bg-white rounded-2xl shadow-sm overflow-hidden" 
+            data-url="https://calendly.com/your-calendly-link?hide_gdpr_banner=1&primary_color=2563eb"
+            style={{ minWidth: "320px", height: "700px" }}
+          />
         </div>
       </div>
     </section>
