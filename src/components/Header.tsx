@@ -46,9 +46,10 @@ const Header = () => {
           {/* Logo */}
           <button
             onClick={() => scrollToSection("home")}
-            className="text-xl font-bold text-brand-primary hover:text-brand-accent transition-colors"
+            className="text-xl font-bold text-brand-primary hover:text-brand-accent transition-all duration-300 hover:scale-110 active:scale-95 relative group"
           >
-            LeadOps
+            <span className="relative z-10">Ravexa Consulting</span>
+            <span className="absolute inset-0 bg-brand-accent/5 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 ease-out"></span>
           </button>
 
           {/* Navigation */}
