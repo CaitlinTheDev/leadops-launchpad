@@ -176,7 +176,7 @@ const Contact = () => {
           </div>
           <div 
             className="calendly-inline-widget bg-white rounded-2xl shadow-sm overflow-hidden" 
-            data-url="https://calendly.com/your-calendly-link?hide_gdpr_banner=1&primary_color=2563eb"
+            data-url="https://calendly.com/razvan-ravexaconsulting/30min?hide_gdpr_banner=1"
             style={{ minWidth: "320px", height: "700px" }}
           />
         </div>
